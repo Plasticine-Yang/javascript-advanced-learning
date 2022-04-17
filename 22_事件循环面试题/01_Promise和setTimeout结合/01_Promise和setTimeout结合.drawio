@@ -1,0 +1,172 @@
+<mxfile host="65bd71144e">
+    <diagram id="Wd4nFZDI5XfD9Hhh5oMe" name="第 1 页">
+        <mxGraphModel dx="817" dy="1023" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" value="" style="group;verticalAlign=top;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="300" width="200" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="7">
+                    <mxGeometry x="18.75" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="'promise1'&lt;br&gt;2&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="7">
+                    <mxGeometry y="30" width="200" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="280" y="300" width="220" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="8">
+                    <mxGeometry x="48.12500000000001" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="'then1'&lt;br&gt;queueMicrotask1&lt;br&gt;then3" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="8">
+                    <mxGeometry y="30" width="220.00000000000003" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="570" y="300" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="11">
+                    <mxGeometry x="35" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="setTimeout1&lt;br&gt;setTimeout2" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="11">
+                    <mxGeometry y="30" width="160" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="group;verticalAlign=top;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="550" width="200" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="14">
+                    <mxGeometry x="18.75" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="'promise1'&lt;br&gt;2&lt;br&gt;'then1'&lt;br&gt;'queueMicrotask1'&lt;br&gt;'then3'" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="14">
+                    <mxGeometry y="30" width="200" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="280" y="550" width="220" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="17">
+                    <mxGeometry x="48.12500000000001" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="17">
+                    <mxGeometry y="30" width="220.00000000000003" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="570" y="550" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="20">
+                    <mxGeometry x="35" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="setTimeout1&lt;br&gt;setTimeout2" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="20">
+                    <mxGeometry y="30" width="160" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="group;verticalAlign=top;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="790" width="200" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="26">
+                    <mxGeometry x="18.75" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="'promise1'&lt;br&gt;2&lt;br&gt;'then1'&lt;br&gt;'queueMicrotask1'&lt;br&gt;'then3'&lt;br&gt;'setTimeout1'" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="26">
+                    <mxGeometry y="40.90909090909091" width="200" height="259.09090909090907" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="280" y="790" width="270" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="29">
+                    <mxGeometry x="48.12500000000001" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="setTImeout1的then1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="29">
+                    <mxGeometry y="30" width="270" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="590" y="790" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="32">
+                    <mxGeometry x="35" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="setTimeout2" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="32">
+                    <mxGeometry y="30" width="160" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="group;verticalAlign=top;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="1090" width="200" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="35">
+                    <mxGeometry x="18.75" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="'promise1'&lt;br&gt;2&lt;br&gt;'then1'&lt;br&gt;'queueMicrotask1'&lt;br&gt;'then3'&lt;br&gt;'setTimeout1'&lt;br&gt;'then2'" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="35">
+                    <mxGeometry y="40.90909090909091" width="200" height="259.09090909090907" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="280" y="1090" width="270" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="38">
+                    <mxGeometry x="48.12500000000001" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="setTimeout1的then2" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="38">
+                    <mxGeometry y="30" width="270" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="590" y="1090" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="41">
+                    <mxGeometry x="35" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="setTimeout2" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="41">
+                    <mxGeometry y="30" width="160" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="group;verticalAlign=top;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="1390" width="200" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="44">
+                    <mxGeometry x="18.75" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="'promise1'&lt;br&gt;2&lt;br&gt;'then1'&lt;br&gt;'queueMicrotask1'&lt;br&gt;'then3'&lt;br&gt;'setTimeout1'&lt;br&gt;'then2'&lt;br&gt;'then4'&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="44">
+                    <mxGeometry y="40.90909090909091" width="200" height="259.09090909090907" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="280" y="1390" width="270" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="47">
+                    <mxGeometry x="48.12500000000001" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="47">
+                    <mxGeometry y="30" width="270" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="590" y="1390" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="50">
+                    <mxGeometry x="35" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="setTimeout2" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="50">
+                    <mxGeometry y="30" width="160" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="group;verticalAlign=top;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="1710" width="200" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="53">
+                    <mxGeometry x="18.75" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="'promise1'&lt;br&gt;2&lt;br&gt;'then1'&lt;br&gt;'queueMicrotask1'&lt;br&gt;'then3'&lt;br&gt;'setTimeout1'&lt;br&gt;'then2'&lt;br&gt;'then4'&lt;br&gt;'setTimeout2'" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="53">
+                    <mxGeometry y="43.63636363636363" width="200" height="276.3636363636363" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="280" y="1710" width="270" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="56">
+                    <mxGeometry x="48.12500000000001" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="56">
+                    <mxGeometry y="30" width="270" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="590" y="1710" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=1;fontSize=24;" vertex="1" parent="59">
+                    <mxGeometry x="35" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=24;fontColor=default;strokeWidth=1;fillColor=none;gradientColor=none;verticalAlign=top;" vertex="1" parent="59">
+                    <mxGeometry y="30" width="160" height="190" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

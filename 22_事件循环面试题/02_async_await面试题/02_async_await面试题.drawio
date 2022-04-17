@@ -1,0 +1,91 @@
+<mxfile host="65bd71144e">
+    <diagram id="FbxyedizkMaMqk098s3Q" name="第 1 页">
+        <mxGraphModel dx="972" dy="1228" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="8" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="520" y="150" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="setTimeout" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="8">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="8">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="280" y="150" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="async1 end&lt;br&gt;promise2" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="9">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="9">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="35" y="150" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="script start&lt;br&gt;async1 start&lt;br&gt;async2&lt;br&gt;promise1&lt;br&gt;script end" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="10">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="10">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="525" y="460" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="setTimeout" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="11">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="11">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="285" y="460" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="14">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="14">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="460" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="script start&lt;br&gt;async1 start&lt;br&gt;async2&lt;br&gt;promise1&lt;br&gt;script end&lt;br&gt;async1 end&lt;br&gt;promise2" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="17">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="17">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="525" y="770" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="20">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="宏任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="20">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="285" y="770" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="23">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="23">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="770" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="script start&lt;br&gt;async1 start&lt;br&gt;async2&lt;br&gt;promise1&lt;br&gt;script end&lt;br&gt;async1 end&lt;br&gt;promise2&lt;br&gt;setTimeout" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="26">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="26">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

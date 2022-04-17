@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>debounce</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(to right, #16222a, #3a6073);
+      }
+      .container span {
+        color: #b8bedd;
+        font-size: 5rem;
+        font-weight: 700;
+      }
+      .container a {
+        padding: 1rem 3rem;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: #b8bedd;
+        border-radius: 1rem;
+        cursor: pointer;
+        margin-top: 2rem;
+        color: #f0e6ef;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 显示请求得到的响应数 -->
+      <span id="info">
+        api请求数量: 0
+        <br />
+        api响应数量: 0
+      </span>
+      <a id="cancel-debounce">cancel debounce</a>
+    </div>
+
+    <script>
+      const oContainer = document.querySelector('.container')
+      const oInfo = document.querySelector('#info')
+      const oCancelDebounce = document.querySelector('#cancel-debounce')
+
+      let requestCount = 0
+      let responseCount = 0
+
+      const init = () => {
+        bindEvents()
+      }
+
+      function mousemoveHandler(e) {
+        // 模拟 ajax 请求 -- 每个请求的响应时间在 0 ~ 2 秒之间
+        requestCount++
+        setTimeout(() => {
+          responseCount++
+          render()
+        }, Math.floor(Math.random() * 2000))
+
+        render()
+      }
+
+      function bindEvents() {
+        // 使用 debounce 包装原本的回调
+        const debouncedMouseMoveHandle = debounce(
+          mousemoveHandler,
+          100000,
+          true
+        )
+        oContainer.addEventListener('mousemove', debouncedMouseMoveHandle)
+
+        // 取消 debounce
+        oCancelDebounce.addEventListener('click', () => {
+          debouncedMouseMoveHandle.cancel()
+        })
+      }
+
+      function responseCountTpl(requestCount, responseCount) {
+        return `
+          api请求数量: ${requestCount}
+          <br />
+          api响应数量: ${responseCount}
+        `
+      }
+
+      function render() {
+        oInfo.innerHTML = responseCountTpl(requestCount, responseCount)
+      }
+
+      // 1. 简易版防抖
+      // function debounce(fn, timeout) {
+      //   let timer = 0
+
+      //   // 要返回一个函数，因为事件监听器中绑定的回调是一个函数
+      //   return function () {
+      //     clearTimeout(timer)
+      //     timer = setTimeout(fn, timeout)
+      //   }
+      // }
+
+      // 2. 修复 this 指向问题
+      // function debounce(fn, timeout) {
+      //   let timer = 0
+
+      //   // 要返回一个函数，因为事件监听器中绑定的回调是一个函数
+      //   return function () {
+      //     clearTimeout(timer)
+
+      //     // 使用箭头函数是因为箭头函数中 this 是返回的匿名函数中的 this
+      //     // 而这个 this 在绑定监听事件的时候会指向被绑定的 dom 元素
+      //     timer = setTimeout(() => {
+      //       fn.apply(this)
+      //     }, timeout)
+      //   }
+      // }
+
+      // 3. 修复 event 参数丢失问题
+      // function debounce(fn, timeout) {
+      //   let timer = 0
+
+      //   // 要返回一个函数，因为事件监听器中绑定的回调是一个函数
+      //   return function () {
+      //     clearTimeout(timer)
+
+      //     // 使用箭头函数是因为箭头函数中 this 是返回的匿名函数中的 this
+      //     // 而这个 this 在绑定监听事件的时候会指向被绑定的 dom 元素
+      //     const args = arguments
+      //     timer = setTimeout(() => {
+      //       fn.apply(this, args)
+      //     }, timeout)
+      //   }
+      // }
+
+      // 4. 添加特性 -- 在定时器的开始执行 fn
+      // function debounce(fn, timeout, leading) {
+      //   let timer = 0
+
+      //   // 要返回一个函数，因为事件监听器中绑定的回调是一个函数
+      //   return function () {
+      //     const args = arguments
+
+      //     clearTimeout(timer)
+      //     if (leading) {
+      //       // 定时器开始之前，!timer === true
+      //       // 表示让 fn 先执行一次，而不是等到定时器到时才执行 fn
+      //       // 因此现在定时器中不需要执行函数 只需要负责将计时器置空即可
+      //       const isCallNow = !timer
+      //       timer = setTimeout(() => (timer = null), timeout)
+
+      //       if (isCallNow) fn.apply(this, args)
+      //     } else {
+      //       // 使用箭头函数是因为箭头函数中 this 是返回的匿名函数中的 this
+      //       // 而这个 this 在绑定监听事件的时候会指向被绑定的 dom 元素
+      //       timer = setTimeout(() => {
+      //         fn.apply(this, args)
+      //       }, timeout)
+      //     }
+      //   }
+      // }
+
+      // 5. 添加特性 -- 取消 debounce
+      function debounce(fn, timeout, leading) {
+        let timer = 0
+
+        // debounced 是一个函数 同时也是一个对象
+        const debounced = function () {
+          const args = arguments
+
+          clearTimeout(timer)
+          if (leading) {
+            // 定时器开始之前，!timer === true
+            // 表示让 fn 先执行一次，而不是等到定时器到时才执行 fn
+            // 因此现在定时器中不需要执行函数 只需要负责将计时器置空即可
+            const isCallNow = !timer
+            timer = setTimeout(() => (timer = null), timeout)
+
+            if (isCallNow) fn.apply(this, args)
+          } else {
+            // 使用箭头函数是因为箭头函数中 this 是返回的匿名函数中的 this
+            // 而这个 this 在绑定监听事件的时候会指向被绑定的 dom 元素
+            timer = setTimeout(() => {
+              fn.apply(this, args)
+            }, timeout)
+          }
+        }
+
+        // 给 debounced 对象添加一个 cancel 方法，重置闭包中的定时器
+        debounced.cancel = function () {
+          clearTimeout(timer)
+          timer = null
+        }
+
+        return debounced
+      }
+
+      init()
+    </script>
+  </body>
+</html>

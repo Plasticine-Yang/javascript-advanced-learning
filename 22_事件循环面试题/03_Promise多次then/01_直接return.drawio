@@ -1,0 +1,157 @@
+<mxfile host="65bd71144e">
+    <diagram id="B-_7KG5Mm6noLWvZeJN-" name="第 1 页">
+        <mxGraphModel dx="486" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="280" y="150" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="0 return 4&lt;br&gt;1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="6" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="6" vertex="1">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="35" y="150" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="9" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="9" vertex="1">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="main script执行 -- 依次加入两个微任务" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="35" y="100" width="360" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="285" y="530" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="1&lt;br&gt;4" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="23" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="23" vertex="1">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="40" y="530" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="0" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="26" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="26" vertex="1">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="开始执行微任务 -- return 4 相当于 resolve(4)，将 下一个 then 加入到微任务队列中" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="480" width="740" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="285" y="930" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="4&lt;br&gt;2" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="30" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="30" vertex="1">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="40" y="930" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="0&lt;br&gt;1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="33" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="33" vertex="1">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="执行微任务 1 -- 打印完 1 后相当于 return undefined -- 也就是 resolve(undefined)&lt;br&gt;将下一个 then 加入微任务队列" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="870" width="730" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="285" y="1330" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="2" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="37" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="37" vertex="1">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="40" y="1330" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="0&lt;br&gt;1&lt;br&gt;4" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="40" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="40" vertex="1">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="执行微任务 4 -- 打印完 4 后相当于 return undefined -- 也就是 resolve(undefined)&lt;br&gt;但是后面没有 then 了，微任务结束" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1270" width="730" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="285" y="1730" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="3" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="44" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="44" vertex="1">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="40" y="1730" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="0&lt;br&gt;1&lt;br&gt;4&lt;br&gt;2" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="47" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="47" vertex="1">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="执行微任务 2 -- 打印完 2 后相当于 return undefined -- 也就是 resolve(undefined)&lt;br&gt;将下一个 then 加入到微任务队列中" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1670" width="730" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="285" y="2150" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="5" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="51" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="51" vertex="1">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="40" y="2150" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="0&lt;br&gt;1&lt;br&gt;4&lt;br&gt;2&lt;br&gt;3" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="54" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="54" vertex="1">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="执行微任务 3 -- 打印完 3 后相当于 return undefined -- 也就是 resolve(undefined)&lt;br&gt;将下一个 then 加入到微任务队列中" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="2090" width="730" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="285" y="2550" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="58" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="微任务" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="58" vertex="1">
+                    <mxGeometry x="55" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="40" y="2550" width="190" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="0&lt;br&gt;1&lt;br&gt;4&lt;br&gt;2&lt;br&gt;3&lt;br&gt;5&lt;br&gt;6" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" parent="61" vertex="1">
+                    <mxGeometry y="30" width="190" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="main script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="61" vertex="1">
+                    <mxGeometry x="40" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="后面都一样了，不断重复直到结束" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="2500" width="320" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
